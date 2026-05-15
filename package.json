@@ -1,0 +1,40 @@
+{
+  "name": "@blackmagic/discord",
+  "version": "1.0.0",
+  "description": "Funções simples para facilitar o desenvolvimento de bots para Discord.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "build:watch": "tsup --watch",
+    "dev": "tsup --watch",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "bot",
+    "utilities"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "discord.js": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.41",
+    "discord.js": "^14.26.4",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
