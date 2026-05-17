@@ -1,4 +1,4 @@
-import { createSeparator } from '@functions';
+import { createSeparator } from '#functions';
 
 const Separator = Object.freeze({
   /**

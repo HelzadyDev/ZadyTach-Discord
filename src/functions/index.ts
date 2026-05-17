@@ -1,4 +1,6 @@
 export * from "./components/separator.js"
+export * from "./components/button.js"
+export * from "./components/row.js"
 
 export * from "./channel.js"
 export * from "./commands.js"
