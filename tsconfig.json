@@ -18,7 +18,8 @@
     "baseUrl": "./src",
     "paths": {
       "#functions": ["./functions/index.ts"],
-      "#constants": ["./constants/index.ts"]
+      "#constants": ["./constants/index.ts"],
+      "#guards": ["./guards/index.ts"],
     },
   },
   "include": ["src/**/*"],

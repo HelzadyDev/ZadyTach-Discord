@@ -47,6 +47,9 @@
     ],
     "#constants": [
       "./constants/index.js"
+    ],
+    "#guards": [
+      "./guards/index.js"
     ]
   }
 }
