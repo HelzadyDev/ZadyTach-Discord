@@ -1,0 +1,54 @@
+import { IntentsBitField, Partials } from "discord.js";
+
+const Message = [
+    IntentsBitField.Flags.DirectMessagePolls,
+    IntentsBitField.Flags.DirectMessageReactions,
+    IntentsBitField.Flags.DirectMessageTyping,
+    IntentsBitField.Flags.DirectMessages,
+    IntentsBitField.Flags.MessageContent,
+    IntentsBitField.Flags.GuildMessages,
+    IntentsBitField.Flags.GuildMessageReactions,
+    IntentsBitField.Flags.GuildMessageTyping
+];
+
+const Guild = [
+IntentsBitField.Flags.GuildExpressions,
+IntentsBitField.Flags.GuildIntegrations,
+IntentsBitField.Flags.GuildInvites,
+IntentsBitField.Flags.GuildMembers,
+IntentsBitField.Flags.GuildMessageReactions,
+IntentsBitField.Flags.GuildMessageTyping,
+IntentsBitField.Flags.GuildMessages,
+IntentsBitField.Flags.GuildModeration,
+IntentsBitField.Flags.GuildPresences,
+IntentsBitField.Flags.GuildScheduledEvents,
+IntentsBitField.Flags.GuildVoiceStates,
+IntentsBitField.Flags.GuildWebhooks,
+IntentsBitField.Flags.Guilds
+];
+
+const Other =[
+    IntentsBitField.Flags.AutoModerationConfiguration,
+    IntentsBitField.Flags.AutoModerationExecution
+];
+
+const CustomItents = {
+    Message,
+    Guild,
+    Other,
+    All: Object.values(IntentsBitField.Flags)
+}
+
+const CustomPartial = [
+    Partials.Channel,
+    Partials.GuildMember,
+    Partials.GuildScheduledEvent,
+    Partials.SoundboardSound,
+    Partials.Message,
+    Partials.Reaction,
+    Partials.ThreadMember,
+    Partials.User
+]
+
+exports.CustomItents = CustomItents;
+exports.CustomPartial = CustomPartial;
