@@ -1,3 +1,10 @@
+export * from "./embeds/assets.js"
+export * from "./embeds/author.js"
+export * from "./embeds/embedplus.js"
+export * from "./embeds/fields.js"
+export * from "./embeds/files.js"
+export * from "./embeds/footer.js"
+
 export * from "./components/button.js"
 export * from "./components/checkBox.js"
 export * from "./components/components.js"
