@@ -1,5 +1,5 @@
 {
-  "name": "@blackmagic/discord",
+  "name": "@zadytach/discord",
   "version": "1.0.0",
   "description": "Funções simples para facilitar o desenvolvimento de bots para Discord.",
   "main": "./dist/index.js",
@@ -38,9 +38,15 @@
     "tsup": "^8.5.1",
     "typescript": "^6.0.3"
   },
-
+  "dependencies": {
+    "@zadytach/core": "^1.0.1"
+  },
   "path": {
-    "@functions": ["./functions/index.js"],
-    "@constants": ["./constants/index.js"]
+    "#functions": [
+      "./functions/index.js"
+    ],
+    "#constants": [
+      "./constants/index.js"
+    ]
   }
 }
