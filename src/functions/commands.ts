@@ -2,7 +2,6 @@ import {
   ApplicationCommand,
   Client,
   Guild,
-  GuildResolvable,
   chatInputApplicationCommandMention,
 } from 'discord.js';
 

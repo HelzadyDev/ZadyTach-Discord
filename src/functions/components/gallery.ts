@@ -1,5 +1,4 @@
 import { MediaGalleryBuilder, APIMediaGalleryItem, Attachment, AttachmentBuilder } from "discord.js";
-import { isAttachment } from "#guards";
 import { isDefined } from "@zadytach/core";
 
 function createMediaGallery(...items: unknown[]) {

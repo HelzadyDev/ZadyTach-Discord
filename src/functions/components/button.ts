@@ -2,8 +2,7 @@ import {
   ButtonBuilder,
   ButtonStyle,
   APIMessageComponentEmoji,
-  BaseMessageOptions,
-} from 'discord.js';
+  } from 'discord.js';
 import { createRow } from '#functions';
 
 interface LinkButtonData {

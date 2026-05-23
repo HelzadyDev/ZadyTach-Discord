@@ -81,7 +81,7 @@ class EmbedPlusBuilder extends EmbedBuilder {
     return Array.from([this]);
   }
 
-  toString(space = 2): string {
+  override toString(space = 2): string {
     return JSON.stringify(this, null, space);
   }
 
@@ -90,7 +90,7 @@ class EmbedPlusBuilder extends EmbedBuilder {
     return new AttachmentBuilder(buffer, data);
   }
 
-  setColor(color: ColorResolvable | null): this {
+  override setColor(color: ColorResolvable | null): this {
     if (color === null) {
       super.setColor("#2B2D31");
     } else if (typeof color === "number") {
