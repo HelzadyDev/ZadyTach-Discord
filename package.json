@@ -1,6 +1,6 @@
 {
   "name": "@zadytach/discord",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Funções simples para facilitar o desenvolvimento de bots para Discord.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
