@@ -35,16 +35,16 @@
   },
   "imports": {
     "#functions": [
-      "./functions/index.js"
+      "./dist/functions/index.js"
     ],
     "#constants": [
-      "./constants/index.js"
+      "./dist/constants/index.js"
     ],
     "#guards": [
-      "./guards/index.js"
+      "./dist/guards/index.js"
     ],
     "#settings": [
-      "./settings/index.js"
+      "./dist/settings/index.js"
     ]
   }
 }
