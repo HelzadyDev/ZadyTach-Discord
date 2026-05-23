@@ -3,26 +3,16 @@
   "version": "1.0.1",
   "description": "Funções simples para facilitar o desenvolvimento de bots para Discord.",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "publishConfig": {
     "access": "public"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
-    "build:watch": "tsup --watch",
-    "dev": "tsup --watch",
-    "lint": "tsc --noEmit"
+    "build": "tsc",
+    "build:watch": "tsx --watch"
   },
   "type": "module",
   "keywords": [
@@ -38,13 +28,12 @@
   "devDependencies": {
     "@types/node": "^25.8.0",
     "discord.js": "^14.26.4",
-    "tsup": "^8.5.1",
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@zadytach/core": "^1.0.1"
+    "@zadytach/core": "latest"
   },
-  "path": {
+  "imports": {
     "#functions": [
       "./functions/index.js"
     ],
@@ -53,6 +42,9 @@
     ],
     "#guards": [
       "./guards/index.js"
+    ],
+    "#settings": [
+      "./settings/index.js"
     ]
   }
 }
