@@ -31,7 +31,7 @@
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "@zadytach/core": "latest"
+    "@zadytach/core": "*"
   },
   "imports": {
     "#functions": [
